@@ -10,12 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     private static final String TEXT = "Hello, %s!";
-    private Hello hello;
 
-    @Autowired
+    /*@Autowired
     public HelloController(Hello hello) {
         this.hello = hello;
-    }
+    }*/
 
     @GetMapping(value = "/welcome")
     public Hello welcome() {
